@@ -1,0 +1,129 @@
+/* hero area style
+============================================================================================ */
+.banner {
+    margin-top: 40px;
+
+    .banner__inner {
+        background: url(../img/bg/banner-bg.png) center center no-repeat;
+        background-size: cover;
+        padding: 180px 120px;
+        position: relative;
+        z-index: 1;
+
+        .banner__left-content {
+            h2 {
+                font-size: 82px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #fff;
+                font-size: 19px;
+                position: relative;
+                padding-left: 25px;
+
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 8px;
+                }
+            }
+        }
+
+        .banner__content-right {
+            p {
+                color: #fff;
+            }
+        }
+
+        .banner__product-info {
+            position: absolute;
+            right: 0;
+            display: flex;
+            z-index: 1;
+
+            .banner__product-info-content {
+                @include transform(rotate(-5deg));
+                margin-right: -90px;
+                margin-top: 25px;
+                position: relative;
+
+                h3 {
+                    font-size: 35px;
+                    color: #fff;
+                }
+
+                .banner__product-info-arrow {
+                    position: absolute;
+                    top: 0;
+                    right: -100px;
+                }
+
+                .primary-btn {
+                    font-family: $mali;
+
+                    &:hover {
+                        opacity: 1;
+                        background: #679D43;
+                    }
+                }
+            }
+
+            .banner__product-info-thumb {
+                z-index: -1;
+            }
+        }
+    }
+}
+
+
+/* page banner style
+============================================================================================ */
+.page-banner {
+    background: url(../img/bg/page-banner-bg.png) center no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 0 130px;
+    margin-top: 40px;
+
+    .page-banner__thumb {
+        position: relative;
+
+        h3 {
+            font-size: 20px;
+            font-family: "Mali", cursive;
+            margin-top: -5%;
+            @include transform(rotate(-10deg));
+            float: right;
+        }
+
+        .page-banner__thumb-arrow {
+            position: absolute;
+            right: -12%;
+            bottom: 9%;
+        }
+    }
+
+    .page-banner__left-content {
+        h2 {
+            font-size: 82px;
+            margin-bottom: 30px;
+        }
+
+        .page-banner__price {
+            display: flex;
+            align-items: center;
+            margin: 25px 0 20px;
+
+            h3 {
+                font-size: 40px;
+                margin-bottom: 0;
+            }
+
+            span {
+                line-height: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

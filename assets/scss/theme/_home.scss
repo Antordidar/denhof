@@ -1,0 +1,279 @@
+/* about area css
+============================================================================================ */
+.about {
+    padding: 70px 0;
+
+    .about__thumb {
+        position: relative;
+
+        h3 {
+            font-size: 20px;
+            font-family: "Mali", cursive;
+            margin-left: 32%;
+            margin-top: -3%;
+            @include transform(rotate(-10deg));
+        }
+
+        .about__thumb-arrow {
+            position: absolute;
+            left: 20%;
+            bottom: 0;
+        }
+    }
+
+    .about__content {
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            span {
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        .primary-btn {
+            margin-top: 15px;
+        }
+    }
+}
+
+/* promo area css
+============================================================================================ */
+.promo {
+    .promo__inner {
+        padding: 0 70px;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(../img/bg/promo-bg.png) no-repeat;
+            background-size: contain;
+            content: "";
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .promo__title {
+            display: flex;
+            align-items: center;
+            @include transform(rotate(-5deg));
+            margin-top: 60px;
+
+            h2 {
+                font-size: 84px;
+                color: $primary-color;
+                margin-bottom: 0;
+                letter-spacing: 2px;
+            }
+
+            .promo__short-title {
+                position: relative;
+                margin-left: 20px;
+
+                h4 {
+                    font-size: 25px;
+                    color: #fff;
+                    margin-bottom: 0;
+                    font-weight: 400;
+                    font-family: $mali;
+                }
+
+                img {
+                    position: absolute;
+                    bottom: -55px;
+                    right: -30px;
+                }
+            }
+        }
+
+        .promo__thumbnail {
+            margin-top: -30px;
+            background: #fff;
+            padding: 15px 15px 30px;
+            box-shadow: 2px 2px 70px #0000004d;
+            @include transform(rotate(5deg));
+            @include transition ();
+
+            img {
+                width: 100%;
+                height: 198px;
+                object-fit: cover;
+            }
+
+            h4 {
+                font-size: 20px;
+                font-family: $mali;
+                color: #000000;
+                text-align: center;
+                margin: 25px 0 0;
+            }
+
+            &:hover {
+                @include transform(rotate(0deg));
+            }
+        }
+
+        .promo__pricing {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 60px;
+
+            .promo__main-price {
+                font-size: 40px;
+                color: #fff;
+                margin-bottom: 0;
+                margin-right: 40px;
+                @include transform(rotate(-7deg));
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    position: absolute;
+                    left: -22px;
+                    top: 30px;
+                    height: 5px;
+                    width: 94px;
+                    background: #F08A25;
+                    content: "";
+                    @include transform(rotate(35deg));
+                }
+            }
+
+            .promo__discount-price {
+                background: url(../img/bg-path-orange.png) no-repeat;
+                background-size: 100% 100%;
+                margin-bottom: 0;
+                padding: 14px 35px;
+
+                h2 {
+                    font-size: 79px;
+                    color: #fff;
+                    @include transform(rotate(-7deg));
+
+                    span {
+                        font-size: 49px;
+                        margin-right: -10px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* opening area css
+============================================================================================ */
+.opening {
+    padding: 100px 0 70px;
+
+    .opening__content {
+        .opening__title {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .opening__timing-wraper {
+            margin-bottom: 30px;
+
+            .opening__timing-list-item {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2px dotted #707070;
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+
+                &:last-child {
+                    border-bottom: 0;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .opening__vs-title {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                font-size: 127px;
+                margin-bottom: 0;
+                @include transform(rotate(-5deg));
+            }
+
+            h3 {
+                margin-bottom: 0;
+                font-size: 40px;
+            }
+        }
+
+    }
+
+    .opening__thumbnail-wraper {
+        position: relative;
+        z-index: 1;
+        height: 500px;
+        margin-top: 50px;
+
+        .opening__thumbnail-item {
+            background: #fff;
+            padding: 15px 15px 30px;
+            box-shadow: 2px 2px 70px #0000004d;
+            @include transition ();
+            width: 245px;
+            height: 280px;
+            position: absolute;
+
+            &.opening--thumbnail1 {
+                bottom: 5%;
+                left: 0;
+                @include transform(rotate(6deg));
+                @include transition();
+            }
+
+            &.opening--thumbnail2 {
+                top: 0;
+                left: 20%;
+                @include transform(rotate(-2deg));
+            }
+
+            &.opening--thumbnail3 {
+                bottom: 15%;
+                left: 40%;
+                @include transform(rotate(-8deg));
+            }
+
+            &.opening--thumbnail4 {
+                top: 0;
+                left: auto;
+                right: 5%;
+                z-index: -1;
+                @include transform(rotate(3deg));
+            }
+
+            img {
+                width: 100%;
+                height: 198px;
+                object-fit: cover;
+            }
+
+            h4 {
+                font-size: 20px;
+                font-family: $mali;
+                color: #000000;
+                text-align: center;
+                margin: 20px 0 0;
+            }
+
+            &:hover {
+                @include transform(rotate(0deg));
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+/* Footer area css
+============================================================================================ */
+.footer {
+    background: url(../img/bg/footer-bg.png) top center no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    .footer__single-footer-widget {
+        .footer__title {
+            h4 {
+                font-size: 22px;
+                font-family: $mali;
+                font-weight: 400;
+                @include transform(rotate(-5deg));
+            }
+
+            img {
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+        }
+
+        ul {
+            margin-left: 65px;
+            margin-top: -20px;
+
+            &.footer__social-info {
+                li {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+
+            li {
+                color: $text-color;
+                margin-bottom: 15px;
+
+                a {
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 50px 0 10px; 
+        .footer-bottom__left {
+            ul {
+                li {
+                    display: inline-block;
+                    color: $text-color;
+                    margin-bottom: 15px;
+                    font-size: 17px;
+                    a {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom__right {
+            text-align: right;
+            p {
+                font-size: 17px;
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
